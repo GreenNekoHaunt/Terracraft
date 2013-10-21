@@ -1,0 +1,9 @@
+package Terracraft.ModItem;
+
+public class ModItemCoin extends ModItem
+{
+    public ModItemCoin(String name)
+    {
+        super(name);
+    }
+}

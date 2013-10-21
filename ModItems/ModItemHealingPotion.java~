@@ -1,0 +1,49 @@
+package Terracraft.ModItem;
+
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
+
+public class ModItemHealingPotion extends ModItem
+{
+    private static int healthGainBase = 5;
+    private int healthGain;
+
+    public ModItemHealingPotion(String name, int size)
+    {
+        super(name);
+        this.healthGain = this.healthGainBase * (size + 1);
+    }
+
+    public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+    {
+        if (!par3EntityPlayer.capabilities.isCreativeMode)
+        {
+            --par1ItemStack.stackSize;
+        }
+
+        if (!par2World.isRemote)
+        {
+            par3EntityPlayer.heal(this.healthGain);
+        }
+
+        return par1ItemStack;
+    }
+
+    public int getMaxItemUseDuration(ItemStack par1ItemStack)
+    {
+        return 16;
+    }
+
+    public EnumAction getItemUseAction(ItemStack par1ItemStack)
+    {
+        return EnumAction.drink;
+    }
+
+    public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer,
+                               World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10)
+    {
+        return false;
+    }
+}
