@@ -1,9 +1,0 @@
-package Terracraft.ModItem;
-
-public class ModItemCrystalMana extends ModItem
-{
-    public ModItemCrystalMana(String name)
-    {
-        super(name);
-    }
-}
