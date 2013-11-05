@@ -3,9 +3,12 @@ package Terracraft;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
+<<<<<<< HEAD
 import net.minecraft.item.Item;
 
 import Terracraft.ModItems.ModItem;
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
 
 public class ModEnumToolMaterial
 {
@@ -32,7 +35,11 @@ public class ModEnumToolMaterial
     public static EnumToolMaterial HALLOWED;
     public static EnumToolMaterial CHLOROPHYTE;
     public static EnumToolMaterial SHROOMITE;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
     public static void initModEnumToolMaterial()
     {
         COPPER = EnumHelper.addToolMaterial("COPPER", 2, 202, 5F, 0.5F, 10);
@@ -56,7 +63,12 @@ public class ModEnumToolMaterial
         ADAMANTITE = EnumHelper.addToolMaterial("ADAMANTITE", 9, 4137, 20F, 26F, 28);
         TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 9, 4663, 21F, 29F, 29);
         CHLOROPHYTE = EnumHelper.addToolMaterial("CHLOROPHYTE", 10, 2235, 22F, 29.0F, 30);
+<<<<<<< HEAD
         HALLOWED = EnumHelper.addToolMaterial("HALLOWED", 10, 3777, 22F, 29.5F, 31);
         SHROOMITE = EnumHelper.addToolMaterial("SHROOMITE", 10, 4534, 23F, 30F, 32);
+=======
+        HALLOWED = EnumHelper.addToolMaterial("HALLOWED", 2, 3777, 22F, 29.5F, 31);
+        SHROOMITE = EnumHelper.addToolMaterial("SHROOMITE", 2, 4534, 23F, 30F, 32);
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
     }
 }

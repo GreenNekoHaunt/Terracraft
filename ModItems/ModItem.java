@@ -1,7 +1,10 @@
 package Terracraft.ModItems;
 
 import net.minecraft.item.Item;
+<<<<<<< HEAD
 import net.minecraft.item.EnumToolMaterial;
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
 import net.minecraft.client.renderer.texture.IconRegister;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -103,6 +106,7 @@ public class ModItem extends Item
     public static Item trueExcalibur;
     public static Item swordChlorophyte;
     public static Item terrablade;
+<<<<<<< HEAD
     public static Item hammerWood;
     public static Item hammerMahogany;
     public static Item hammerCopper;
@@ -152,6 +156,8 @@ public class ModItem extends Item
     public static Item pickaxeTitanium;
     public static Item pickaxeChlorophyte;
     public static Item pickaxeSpectre;
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
 
     public ModItem(String name)
     {
@@ -189,6 +195,7 @@ public class ModItem extends Item
         // TODO: MISSING GFX: Item trueExcalibur
         // TODO: MISSING GFX: Item swordChlorophyte
         // TODO: MISSING GFX: Item terrablade
+<<<<<<< HEAD
         // TODO: MISSING GFX: Item theBreaker;
         // TODO: MISSING GFX: Item fleshGrinder;
         // TODO: MISSING GFX: Item pwnHammer;
@@ -213,6 +220,8 @@ public class ModItem extends Item
         // TODO: MISSING GFX: Item pickaxeTitanium;
         // TODO: MISSING GFX: Item pickaxeChlorophyte;
         // TODO: MISSING GFX: Item pickaxeSpectre;
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
         ingotCopper = new ModItem("ingotCopper").setModCreativeTabMaterial().setMaxStackSize(64);
         ingotTin = new ModItem("ingotTin").setModCreativeTabMaterial().setMaxStackSize(64);
         ingotLead = new ModItem("ingotLead").setModCreativeTabMaterial().setMaxStackSize(64);
@@ -267,13 +276,18 @@ public class ModItem extends Item
         swordPlatinum = new ModItemBroadsword("swordPlatinum", ModEnumToolMaterial.PLATINUM).setModCreativeTabWeapon();
         lightsBane = new ModItemBroadsword("lightsBane", ModEnumToolMaterial.SHADOW).setModCreativeTabWeapon();
         bloodButcher = new ModItemBroadsword("bloodButcher", ModEnumToolMaterial.CRIMSON).setModCreativeTabWeapon();
+<<<<<<< HEAD
         beeKeeper = new ModItemBeeKeeper("beeKeeper").setModCreativeTabWeapon();
+=======
+        beeKeeper = new ModItem("beeKeeper").setModCreativeTabWeapon(); //ModItemBeeKeeper
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
         phasebladeRed = new ModItemPhaseblade("phasebladeRed").setModCreativeTabWeapon();
         phasebladeWhite = new ModItemPhaseblade("phasebladeWhite").setModCreativeTabWeapon();
         phasebladePurple = new ModItemPhaseblade("phasebladePurple").setModCreativeTabWeapon();
         phasebladeYellow = new ModItemPhaseblade("phasebladeYellow").setModCreativeTabWeapon();
         phasebladeBlue = new ModItemPhaseblade("phasebladeBlue").setModCreativeTabWeapon();
         phasebladeGreen = new ModItemPhaseblade("phasebladeGreen").setModCreativeTabWeapon();
+<<<<<<< HEAD
         phasesaberRed = new ModItemPhasesaber("phasesaberRed").setModCreativeTabWeapon();
         phasesaberWhite = new ModItemPhasesaber("phasesaberWhite").setModCreativeTabWeapon();
         phasesaberPurple = new ModItemPhasesaber("phasesaberPurple").setModCreativeTabWeapon();
@@ -285,6 +299,19 @@ public class ModItem extends Item
         muramasa = new ModItemMuramasa("muramasa").setModCreativeTabWeapon();
         nightsEdge = new ModItemNightsEdge("nightsEdge").setModCreativeTabWeapon();
         breakerBlade = new ModItemBreakerBlade("breakerBlade").setModCreativeTabWeapon();
+=======
+        phasesaberRed = new ModItemPhasesaber("phasesaberRed").setModCreativeTabWeapon(); //ModItemPhasesaber
+        phasesaberWhite = new ModItemPhasesaber("phasesaberWhite").setModCreativeTabWeapon(); //ModItemPhasesaber
+        phasesaberPurple = new ModItemPhasesaber("phasesaberPurple").setModCreativeTabWeapon(); //ModItemPhasesaber
+        phasesaberYellow = new ModItemPhasesaber("phasesaberYellow").setModCreativeTabWeapon(); //ModItemPhasesaber
+        phasesaberBlue = new ModItemPhasesaber("phasesaberBlue").setModCreativeTabWeapon(); //ModItemPhasesaber
+        phasesaberGreen = new ModItemPhasesaber("phasesaberGreen").setModCreativeTabWeapon(); //ModItemPhasesaber
+        fieryGreatsword = new ModItemBroadsword("fieryGreatswird", ModEnumToolMaterial.MOLTEN).setModCreativeTabWeapon();
+        bladeOfGrass = new ModItem("bladeOfGrass").setModCreativeTabWeapon(); //ModItemBladeOfGrass
+        muramasa = new ModItem("muramasa").setModCreativeTabWeapon(); //ModItemMuramasa
+        nightsEdge = new ModItem("nightsEdge").setModCreativeTabWeapon(); //ModItemNightsEdge
+        breakerBlade = new ModItem("breakerBlade").setModCreativeTabWeapon(); //ModItemPhasesaber //ModItemBreakerBlade
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
         swordCobalt = new ModItemBroadsword("swordCobalt", ModEnumToolMaterial.COBALT).setModCreativeTabWeapon();
         swordMythril = new ModItemBroadsword("swordMythril", ModEnumToolMaterial.MYTHRIL).setModCreativeTabWeapon();
         swordAdamantite = new ModItemBroadsword("swordAdamantite", ModEnumToolMaterial.ADAMANTITE).setModCreativeTabWeapon();
@@ -292,6 +319,7 @@ public class ModItem extends Item
         swordOrichalcum = new ModItemBroadsword("swordOrichalcum", ModEnumToolMaterial.ORICHALCUM).setModCreativeTabWeapon();
         swordTitanium = new ModItemBroadsword("swordTitanium", ModEnumToolMaterial.TITANIUM).setModCreativeTabWeapon();
         excalibur = new ModItemBroadsword("excalibur", ModEnumToolMaterial.HALLOWED).setModCreativeTabWeapon();
+<<<<<<< HEAD
         frostBrand = new ModItemFrostBrand("frostBrand").setModCreativeTabWeapon();
         cutlass = new ModItemCutlass("cutlass").setModCreativeTabWeapon();
         keyBrand = new ModItemKeyBrand("keyBrand").setModCreativeTabWeapon();
@@ -348,6 +376,16 @@ public class ModItem extends Item
         pickaxeAdamantite = new ModItemModPickaxe("pickaxeAdamantite", ModEnumToolMaterial.ADAMANTITE).setModCreativeTabTool();
         pickaxeTitanium = new ModItemModPickaxe("pickaxeTitanium", ModEnumToolMaterial.TITANIUM).setModCreativeTabTool();
         pickaxeChlorophyte = new ModItemModPickaxe("pickaxeChlorophyte", ModEnumToolMaterial.CHLOROPHYTE).setModCreativeTabTool();
+=======
+        frostBrand = new ModItem("frostBrand").setModCreativeTabWeapon(); //ModItemFrostBrand
+        cutlass = new ModItem("cutlass").setModCreativeTabWeapon(); //ModItemCutlass
+        keyBrand = new ModItem("keyBrand").setModCreativeTabWeapon(); //ModItemKeyBrand
+        beamSword = new ModItem("beamSword").setModCreativeTabWeapon(); //ModItemBeamSword
+        trueNightsEdge = new ModItem("trueNightsEdge").setModCreativeTabWeapon(); //ModItemTrueNightsEdge
+        trueExcalibur = new ModItem("trueExcalibur").setModCreativeTabWeapon(); //ModItemTrueExcalibur
+        swordChlorophyte = new ModItemBroadsword("swordChlorophyte", ModEnumToolMaterial.CHLOROPHYTE).setModCreativeTabWeapon();
+        terrablade = new ModItem("terrablade").setModCreativeTabWeapon(); //ModItemTerrablade
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
         addNames();
     }
     
@@ -376,12 +414,15 @@ public class ModItem extends Item
         LanguageRegistry.addName(sapphire, "Sapphire");
         LanguageRegistry.addName(topaz, "Topaz");
         LanguageRegistry.addName(amethyst, "Amethyst");
+<<<<<<< HEAD
         LanguageRegistry.addName(soulFlight, "Soul of Flight");
         LanguageRegistry.addName(soulLight, "Soul of Light");
         LanguageRegistry.addName(soulNight, "Soul of Night");
         LanguageRegistry.addName(soulMight, "Soul of Might");
         LanguageRegistry.addName(soulSight, "Soul of Sight");
         LanguageRegistry.addName(soulFright, "Soul of Fright");
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
         LanguageRegistry.addName(gel, "Gel");
         LanguageRegistry.addName(blackLens, "Black Lens");
         LanguageRegistry.addName(lens, "Lens");
@@ -440,6 +481,7 @@ public class ModItem extends Item
         LanguageRegistry.addName(trueExcalibur, "True Excalibur");
         LanguageRegistry.addName(swordChlorophyte, "Chlorophyte Claymore");
         LanguageRegistry.addName(terrablade, "Terrablade");
+<<<<<<< HEAD
         LanguageRegistry.addName(hammerWood, "Wooden Hammer");
         LanguageRegistry.addName(hammerMahogany, "Mahoganywood Hammer");
         LanguageRegistry.addName(hammerCopper, "Copper Hammer");
@@ -488,6 +530,8 @@ public class ModItem extends Item
         LanguageRegistry.addName(pickaxeAdamantite, "Adamantite Pickaxe");
         LanguageRegistry.addName(pickaxeTitanium, "Titanium Pickaxe");
         LanguageRegistry.addName(pickaxeChlorophyte, "Chlorophyte Pickaxe");
+=======
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
     }
 
     public Item setModCreativeTabMaterial()

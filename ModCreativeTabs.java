@@ -1,11 +1,17 @@
 package Terracraft;
 
+<<<<<<< HEAD
 import java.util.Random;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+=======
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
 
 import Terracraft.ModBlocks.ModBlock;
 import Terracraft.ModItems.ModItem;
@@ -21,8 +27,13 @@ public class ModCreativeTabs
     public static CreativeTabs tabArmor;
     public static CreativeTabs tabAccessories;
     public static CreativeTabs tabPotions;
+<<<<<<< HEAD
     public static CreativeTabs tabCreatures;  
 
+=======
+    public static CreativeTabs tabCreatures;
+    
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
     public ModCreativeTabs()
     {
     }
@@ -46,17 +57,29 @@ public class ModCreativeTabs
         };
         tabMaterial = new CreativeTabs("tabMaterial") {
             public ItemStack getIconItemStack() {
+<<<<<<< HEAD
                 return new ItemStack(ModItem.ingotHellstone);
+=======
+                return new ItemStack(ModItem.ingotMythril);
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
             }
         };
         tabTools = new CreativeTabs("tabTools") {
             public ItemStack getIconItemStack() {
+<<<<<<< HEAD
                 return new ItemStack(ModItem.hammerTin);
+=======
+                return new ItemStack(ModItem.gel);
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
             }
         };
         tabWeapons = new CreativeTabs("tabWeapons") {
             public ItemStack getIconItemStack() {
+<<<<<<< HEAD
                 return new ItemStack(ModItem.swordEbonwood);
+=======
+                return new ItemStack(ModItem.terrablade);
+>>>>>>> 1d908db81065a13cb092415a639b8cc7fd44bb99
             }
         };
         tabArmor = new CreativeTabs("tabArmor") {
