@@ -3,15 +3,15 @@ Terracraft
 
 A Minecraft modification that adds Terraria features to Minecraft.
 
-1. Copyright
-    1.1 General
-    1.2 Source Code
-    1.3 Graphics
-2. Collaborating
-    2.1 Applying
-    2.2 Adapting Features
-    2.3 Code Tidiness
-3. List of Adapted Features
+1. Copyright<br/>
+    1.1 General<br/>
+    1.2 Source Code<br/>
+    1.3 Graphics<br/>
+2. Collaborating<br/>
+    2.1 Applying<br/>
+    2.2 Adapting Features<br/>
+    2.3 Code Tidiness<br/>
+3. List of Adapted Features<br/>
 
 1. Copyright
 ==========
@@ -68,7 +68,7 @@ before uploading.
 3. Adapted Features
 ==========
 
-*.  Feature: Alternate Ores spawn chunk based instead of world based.
-    Reason: Terraria map is restricted, Minecraft world is infinite. Characters from Minecraft are world dependend.
-*.  Feature: Minecrafts crafting system will be used for Terracraft recipes.
-    Reason: Minecrafts crafting system is more comfortable and can be easily memorized unlike Terraria's.
+*.  Feature: Alternate Ores spawn chunk based instead of world based.<br/>
+    Reason: Terraria map is restricted, Minecraft world is infinite. Characters from Minecraft are world dependend.<br/>
+*.  Feature: Minecrafts crafting system will be used for Terracraft recipes.<br/>
+    Reason: Minecrafts crafting system is more comfortable and can be easily memorized unlike Terraria's.<br/>
