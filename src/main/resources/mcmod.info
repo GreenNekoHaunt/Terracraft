@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tc",
+  "name": "Terracraft",
+  "description": "This mod is a package of Terraria features that it adds to Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["GreenNekoHaunt"],
+  "credits": "GreenNekoHaunt, Redigit/Re-logic, Tiy and the rest of the Terraria Developers",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
