@@ -11,7 +11,7 @@ A Minecraft modification that adds Terraria features to Minecraft.
     2.1 <a href="#21-applying">Applying</a><br/>
     2.2 <a href="#22-adapting-features">Adapting Features</a><br/>
     2.3 <a href="#23-code-tidiness">Code Tidiness</a><br/>
-3. <a href="#3-list-of-adapted-features">List of Adapted Features</a><br/>
+3. <a href="#3-adapted-features">List of Adapted Features</a><br/>
 
 1. Copyright
 ----------
