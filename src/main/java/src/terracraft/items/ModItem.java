@@ -53,6 +53,8 @@ public class ModItem extends Item
     public static Item crystalMana;
     public static Item keyGold;
     public static Item keyShadow;
+    public static Item rope;
+    public static Item magicMirror;
     public static Item potionGreaterHealing;
     public static Item potionHealing;
     public static Item potionLesserHealing;
@@ -170,6 +172,8 @@ public class ModItem extends Item
 
     public static void initItems()
     {
+    	// TODO: MISSING GFX: Item rope
+    	// TODO: MISSING GFX: Item magicMirror
         // TODO: MISSING GFX: Item swordCactus
         // TODO: MISSING GFX: Item bloodButcher
         // TODO: MISSING GFX: Item bladeOfGrass
@@ -239,6 +243,8 @@ public class ModItem extends Item
         crystalMana = new ModItemCrystalMana("crystalMana").setModCreativeTabConsumable();
         keyGold = new ModItemKey("keyGold").setModCreativeTabConsumable();
         keyShadow = new ModItemKey("keyShadow").setModCreativeTabConsumable();
+        rope = new ModItemRope("rope").setModCreativeTabConsumable();
+        magicMirror = new ModItemMagicMirror("magicMirror").setModCreativeTabTool();
         potionGreaterHealing = new ModItemPotionHealing("potionGreaterHealing", 2).setModCreativeTabConsumable();
         potionHealing = new ModItemPotionHealing("potionHealing", 1).setModCreativeTabConsumable();
         potionLesserHealing = new ModItemPotionHealing("potionLesserHealing", 0).setModCreativeTabConsumable();

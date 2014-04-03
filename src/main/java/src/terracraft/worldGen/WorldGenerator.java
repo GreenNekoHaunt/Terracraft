@@ -16,18 +16,18 @@ public class WorldGenerator implements IWorldGenerator
     {
          switch(world.provider.dimensionId)
          {
-              case -1: generateNether(world, random, chunkX * 16, chunkZ * 16);
-              case 0: generateSurface(world, random, chunkX * 16, chunkZ * 16);
-              case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
+              case -1: generateNether(world, random, chunkX * 16, chunkZ * 16, chunkGenerator, chunkProvider);
+              case 0: generateSurface(world, random, chunkX * 16, chunkZ * 16, chunkGenerator, chunkProvider);
+              case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16, chunkGenerator, chunkProvider);
          }
     }
 
-    private void generateEnd(World world, Random random, int x, int z)
+    private void generateEnd(World world, Random random, int x, int z,  IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
     {
 
     }
 
-    private void generateSurface(World world, Random random, int x, int z)
+    private void generateSurface(World world, Random random, int x, int z,  IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
     {
         addOreSpawn(ModBlock.silt, world, random, x, z, 18, 6, 1, 64);
         addOreSpawn(ModBlock.mud, world, random, x, z, 32, 4, 1, 64);
@@ -50,9 +50,13 @@ public class WorldGenerator implements IWorldGenerator
                 addOreSpawn(ModBlock.oreCrimtane, world, random, x, z, 3, 1, 1, 48);
                 break;
         }
+        if(random.nextFloat() < 0.33)
+        {
+        	(new WorldGenChests()).generate(random, x, z, world, chunkGenerator, chunkProvider);
+        }
     }
 
-    private void generateNether(World world, Random random, int x, int z)
+    private void generateNether(World world, Random random, int x, int z,  IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
     {
 
     }

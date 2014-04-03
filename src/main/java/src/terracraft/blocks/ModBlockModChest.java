@@ -220,7 +220,7 @@ public class ModBlockModChest extends ModBlock implements ITileEntityProvider
         }
         else
         {
-            IInventory iinventory = this.getIInventoryObject(world, x, y, z);
+            IInventory iinventory = this.getIInventoryObject(world, x, y, z, false);
 
             if (iinventory != null)
             {
@@ -231,9 +231,14 @@ public class ModBlockModChest extends ModBlock implements ITileEntityProvider
         }
     }
 
-    public IInventory getIInventoryObject(World world, int x, int y, int z)
+    public IInventory getIInventoryObject(World world, int x, int y, int z, boolean ignoreExceptions)
     {
         Object object = (ModTileEntityModChest)world.getTileEntity(x, y, z);
+
+        if(ignoreExceptions)
+        {
+        	return (IInventory)object;
+        }
 
         if (object == null)
         {
@@ -319,7 +324,7 @@ public class ModBlockModChest extends ModBlock implements ITileEntityProvider
 
     public int getComparatorInputOverride(World world, int x, int y, int z, int meta)
     {
-        return Container.calcRedstoneFromInventory(this.getIInventoryObject(world, x, y, z));
+        return Container.calcRedstoneFromInventory(this.getIInventoryObject(world, x, y, z, false));
     }
 
     @SideOnly(Side.CLIENT)

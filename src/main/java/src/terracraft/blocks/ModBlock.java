@@ -14,6 +14,7 @@ public class ModBlock extends Block
 {
 	//SoundTypes
 	static Block.SoundType soundTypeMud;
+	static Block.SoundType soundTypeRope;
 	//Blocks
     public static Block oreCopper;
     public static Block oreTin;
@@ -74,6 +75,7 @@ public class ModBlock extends Block
     public static Block bubbleGum;
     public static Block spike;
     public static Block sunPlate;
+    public static Block ropeBlock;
     public static Block brickRed;
     public static Block brickObsidian;
     public static Block brickMudstone;
@@ -159,6 +161,7 @@ public class ModBlock extends Block
     public static void initBlockSounds()
     {
         soundTypeMud = new Block.SoundType("sand", 1.0F, 1.0F);
+        soundTypeRope = new Block.SoundType("wool", 1.0F, 0.2F);
     }
 
     public static void initBlocks()
@@ -220,6 +223,7 @@ public class ModBlock extends Block
         bubbleGum = new ModBlock("bubbleGum", Material.rock).setHardness(1.5F);
         spike = new ModBlock("spike", Material.iron, 2.0F, 0.0F, soundTypeMetal); //ModBlockSpike
         sunPlate = new ModBlock("sunPlate", Material.iron, 2.0F, 0.0F, soundTypeMetal);
+        ropeBlock = new ModBlockRopeBlock("ropeBlock");
         brickRed = new ModBlockBrick("brickRed");
         brickObsidian = new ModBlockBrick("brickObsidian");
         brickMudstone = new ModBlockBrick("brickMudstone");

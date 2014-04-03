@@ -47,7 +47,7 @@ public class Terracraft
     {
 //        LanguageRegistry.instance().addStringLocalization("generator.Terracraft", "Terracraft");
         proxy.registerRenderers();
-//        GameRegistry.registerWorldGenerator(worldGenerator, 3);
+        GameRegistry.registerWorldGenerator(worldGenerator, 3);
         ModRecipes.initAll();
     }
 
