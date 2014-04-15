@@ -67,3 +67,4 @@ before uploading.
 *.  Feature: Minecrafts crafting system will be used for Terracraft recipes.<br/>
     Reason: Minecrafts crafting system is more comfortable and can be easily memorized unlike Terraria's.<br/>
 
+
